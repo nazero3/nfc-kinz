@@ -138,10 +138,8 @@ a {
   height: calc(var(--u) * 4.2);
   margin: 0 auto calc(var(--u) * 1.35);
   object-fit: contain;
-  filter:
-    brightness(1.55)
-    contrast(1.08)
-    drop-shadow(0 4px 16px rgba(0, 0, 0, 0.35));
+  border-radius: calc(var(--u) * 0.7);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 .welcome {
