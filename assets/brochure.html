@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>كُتيّب كينز | Kinz Brochure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1A2656;
+      --deep: #0B1024;
+      --gold: #FBB03B;
+      --gold-dark: #E19E35;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: #e8eaf0;
+      color: var(--navy);
+      line-height: 1.7;
+    }
+
+    .sheet {
+      width: min(800px, 100%);
+      margin: 1.5rem auto;
+      background: #fff;
+      box-shadow: 0 20px 50px rgba(11, 16, 36, 0.15);
+      overflow: hidden;
+    }
+
+    .cover {
+      background: linear-gradient(145deg, var(--navy), var(--deep));
+      color: #fff;
+      padding: 3rem 2.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .cover::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.08;
+      background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+
+    .cover img {
+      height: 72px;
+      margin: 0 auto 1.5rem;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2rem;
+      font-weight: 800;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cover h1 span { color: var(--gold); }
+
+    .cover p {
+      margin: 0 auto;
+      max-width: 36ch;
+      color: rgba(255,255,255,0.8);
+      position: relative;
+      z-index: 1;
+    }
+
+    .body {
+      padding: 2.5rem;
+    }
+
+    h2 {
+      margin: 0 0 1rem;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin-top: 0.5rem;
+      background: var(--gold);
+      border-radius: 999px;
+    }
+
+    .services {
+      display: grid;
+      gap: 1rem;
+      margin: 0 0 2rem;
+    }
+
+    .svc {
+      padding: 1rem 1.15rem;
+      border-right: 3px solid var(--gold);
+      background: #f7f8fb;
+    }
+
+    .svc h3 {
+      margin: 0 0 0.25rem;
+      font-size: 1.05rem;
+    }
+
+    .svc p {
+      margin: 0;
+      color: #5b647a;
+      font-size: 0.95rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .step {
+      text-align: center;
+      padding: 1rem 0.5rem;
+      background: linear-gradient(180deg, #fff8eb, #fff);
+      border: 1px solid rgba(251, 176, 59, 0.35);
+      border-radius: 12px;
+    }
+
+    .step strong {
+      display: block;
+      color: var(--gold);
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .step span {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .cta {
+      background: linear-gradient(145deg, var(--navy), var(--deep));
+      color: #fff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .cta p { margin: 0 0 0.5rem; color: rgba(255,255,255,0.85); }
+    .cta a {
+      color: var(--gold);
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.15rem;
+    }
+
+    .foot {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: #8a90a3;
+      font-size: 0.85rem;
+    }
+
+    .print-hint {
+      text-align: center;
+      padding: 1rem;
+      color: #5b647a;
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .sheet { margin: 0; box-shadow: none; width: 100%; }
+      .print-hint { display: none; }
+    }
+
+    @media (max-width: 640px) {
+      .steps { grid-template-columns: 1fr; }
+      .body, .cover { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <p class="print-hint">لطباعة أو حفظ PDF: Ctrl/Cmd + P ← اختر «حفظ كملف PDF»</p>
+
+  <article class="sheet">
+    <header class="cover">
+      <img src="../images/kinz-logo-web.png" alt="كينز">
+      <h1>كينز.. حيث يتحول التعلّم إلى <span>شغف</span></h1>
+      <p>منصة التعلّم الذكي وتطوير المهارات — دورات تفاعلية للمناهج، الإنجليزية، ومهارات المستقبل.</p>
+    </header>
+
+    <div class="body">
+      <h2>خدماتنا</h2>
+      <div class="services">
+        <div class="svc">
+          <h3>تقوية المناهج الدراسية</h3>
+          <p>شرح مبسّط لكافة المواد العلمية والأدبية بتركيز على النقاط الهامة للامتحانات.</p>
+        </div>
+        <div class="svc">
+          <h3>كورس الإنجليزية الشامل</h3>
+          <p>من التأسيس إلى المحادثة بطلاقة. نجهّزك لتتكلم الإنجليزية بثقة في حياتك ودراستك.</p>
+        </div>
+        <div class="svc">
+          <h3>مهارات المستقبل</h3>
+          <p>دورات قصيرة في البرمجة، التصميم، والمهارات التي يحتاجها سوق العمل فعلياً.</p>
+        </div>
+      </div>
+
+      <h2>لماذا كينز؟</h2>
+      <div class="services">
+        <div class="svc">
+          <h3>لا للملل</h3>
+          <p>أساليب شرح حديثة بعيدة عن التلقين — نركّز على الفهم والمتعة.</p>
+        </div>
+        <div class="svc">
+          <h3>وقتك ملكك</h3>
+          <p>دروس مرنة تناسب جدولك، من مكانك وفي الوقت الذي تحبّه.</p>
+        </div>
+        <div class="svc">
+          <h3>دعم حقيقي</h3>
+          <p>فريقنا معك خطوة بخطوة للإجابة على استفساراتك وضمان تفوقك.</p>
+        </div>
+      </div>
+
+      <h2>خطواتك للنجاح</h2>
+      <div class="steps">
+        <div class="step"><strong>01</strong><span>تواصل معنا</span></div>
+        <div class="step"><strong>02</strong><span>استشارة مجانية</span></div>
+        <div class="step"><strong>03</strong><span>انطلق</span></div>
+      </div>
+
+      <div class="cta">
+        <p>المعرفة هي الكنز الحقيقي</p>
+        <p><a href="https://wa.me/963983888184">واتساب: +963 983 888 184</a></p>
+        <p><a href="https://kinz-ed.com">kinz-ed.com</a></p>
+      </div>
+
+      <p class="foot">© 2026 KINZ · جميع الحقوق محفوظة</p>
+    </div>
+  </article>
+</body>
+</html>
