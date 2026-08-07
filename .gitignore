@@ -1,5 +1,10 @@
 .venv/
 __pycache__/
 .DS_Store
+node_modules/
+dist/
+*.local
+.vite/
+images.bak/
 images/kinz-logo.png
 images/hero.png
